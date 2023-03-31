@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header__section">
+            <a href="index.html"><img src="./images/header/Rectangle 370.png" alt="logo" id="header__logo"></a>
+            <div class="header__item" id="specialists">
+                <a href="#" class="headerButton">Специалистам</a>
+            </div>
+            <div class="header__item" id="teams">
+                <a href="#" class="headerButton">Командам</a>
+            </div>
+            <div class="header__item" id="search">
+                <a href="#" class="headerButton" onclick="openSearch()">Поиск</a>
+            </div>
+            <div class="header__item" id="feedbacks">
+                <a href="#" class="headerButton">Мои отклики</a>
+            </div>
+        </div>
+        <div class="header__section">
+            <a href="#"><img src="./images/header/bell.svg" alt="bell" id="bell" onclick="openNotifications()"></a> 
+            <a href="#"><img src="./images/header/Ellipse 1.png" alt="profile" id="profile__avatar"></a><!--аватар пользователя получать с бд-->
+        </div>
+        <div id="search__box">
+            <input class="search-txt" type="text" placeholder="Введите профессию">
+            <img src="./images/header/Rectangle 10.svg" alt="search" id="search-bg">
+            <img src="./images/header/Vector.svg" alt="magnifier-1" id="magnifier-1">
+            <img src="./images/header/Vector-1.svg" alt="magnifier-2" id="magnifier-2">
+        </div>
+        <div id="notifications">
+            <div id="notifications__box">
+                <!--получать уведомления с бд-->
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main__information">
+            <img src="./images/main/Rectangle 1.jpg" alt="right-image" id="main__image">
+            <h1 class="main__txt3" id="headline">Мы поможем тебя найти
+                свой dream team</h1>
+            <h1 class="main__txt" id="subheadline">DP — это платформ, где российские айтишники могут найти свою работу или команду мечты, а владелицы компаний могут найти подходящего своей компании специалиста. </h1>
+            <a href="#" class="main__txt4" id="learn__more">Узнать больше</a>
+            <h1 class="main__txt" id="main__portfolio">Портфолио</h1>
+            <h1 class="main__txt" id="main__exp">Опыт в сфере</h1>
+            <h1 class="main__txt" id="main__teams">Команды</h1>
+            <h1 class="main__txt" id="main__specialists">Специалисты</h1>
+            <h1 class="main__txt2" id="count__portfolio">960</h1>
+            <h1 class="main__txt2" id="count__exp">17</h1>
+            <h1 class="main__txt2" id="count__teams">1253</h1>
+            <h1 class="main__txt2" id="count__specialists">4382</h1>
+        </div>
+        <div class="portfolio">
+            <h1 class="main__txt3" id="portfolio__container">Портфолио</h1>
+                <!--получать портфолио с бд-->
+            <h1 class="main__txt4" id="view__all1">Посмотреть все</h1>
+        </div>
+    </div>
+</body>
+</html>
