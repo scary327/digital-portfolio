@@ -105,15 +105,15 @@
     z-index: 1;
 }
 
-.search-txt {
-    display:inline;
-    border: 0px;
-    text-decoration: none;
+#search-txt {
+    z-index: 2;
+    border: none;
     position: absolute;
     width: 152px;
     height: 17px;
     left: 1300px;
     top: 130.5px;
+    outline: none;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -121,6 +121,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #C2C2C2;
+    background: #F0F0F0;
 }
 
 #search-bg {
@@ -207,6 +208,26 @@
     line-height: 22px;
 }
 
+.main__txt2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+.main__txt3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #000;
+}
+
 #subheadline {
     position: absolute;
     width: 483px;
@@ -215,7 +236,13 @@
     top: 305px;
 }
 
-.main__txt4 {
+#learn__more {
+    position: absolute;
+    width: 130px;
+    height: 17px;
+    left: 99px;
+    top: 453px;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -224,14 +251,6 @@
     text-decoration-line: underline;
 
     color: #000000;
-}
-
-#learn__more {
-    position: absolute;
-    width: 130px;
-    height: 17px;
-    left: 99px;
-    top: 453px;
 }
 
 #main__portfolio {
@@ -266,16 +285,6 @@
     top: 339px;
 }
 
-.main__txt2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 59px;
-
-    color: #000000;
-}
-
 #count__portfolio {
     position: absolute;
     width: 92px;
@@ -308,17 +317,7 @@
     top: 370px;
 }
 
-.main__txt3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
-
-    color: #000;
-}
-
-#portfolio__container {
+#portfolio__main {
     position: absolute;
     width: 217px;
     height: 44px;
@@ -326,11 +325,115 @@
     top: 760px;
 }
 
-#view__all1 {
+#teams__main {
     position: absolute;
-    width: 116px;
-    height: 17px;
-    left: 1743px;
-    top: 1360px;
+    width: 175px;
+    height: 44px;
+    left: 100px;
+    top: 1463px;
+}
+
+#email__text {
+    position: absolute;
+    width: 483px;
+    height: 44px;
+    left: 719px;
+    top: 2210px;
+
+    text-align: center;
+}
+
+#email__container {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 332px;
+    height: 142px;
+    left: 795px;
+    top: 2307px;
+
+    border: 1px solid #000000;
+    border-radius: 40px;
+}
+
+#email__headline {
+    position: absolute;
+    width: 117px;
+    height: 22px;
+    left: 28px;
+    top: 19px;
+}
+
+#email__example {
+    position: absolute;
+    width: 240px;
+    height: 22px;
+    left: 27px;
+    top: 54px;
+
+    color: #A69E9E;
+
+    border: none;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.4);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+    outline: none;
+    vertical-align: middle;
     white-space: nowrap;
+}
+
+#confirmation {
+    position: absolute;
+    width: 100px;
+    height: 33px;
+    left: 216px;
+    top: 88px;
+
+    color: #FFFFFF;
+    background: #000000;
+}
+
+#footer__bottom {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 80px;
+    top: 2532px;
+
+    background: #000000;
+}
+
+#footer__logo {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 132px;
+    top: 0px;
+}
+
+#telegram__logo {
+    position: absolute;
+    left: 324px;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+}
+
+#vk__logo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 495px;
+    top: 20px;
+}
+
+#footer__creator-mail {
+    position: absolute;
+    width: 204px;
+    height: 22px;
+    left: 1288px;
+    top: 29px;
+
+    color: #FFFFFF;
 }

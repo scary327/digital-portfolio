@@ -14,7 +14,7 @@
 <body>
     <div class="header">
         <div class="header__section">
-            <a href="index.html"><img src="./images/header/Rectangle 370.png" alt="logo" id="header__logo"></a>
+            <a href="index.html"><img src="./images/header/logo.png" alt="logo" id="header__logo"></a>
             <div class="header__item" id="specialists">
                 <a href="#" class="headerButton">Специалистам</a>
             </div>
@@ -33,10 +33,13 @@
             <a href="#"><img src="./images/header/Ellipse 1.png" alt="profile" id="profile__avatar"></a><!--аватар пользователя получать с бд-->
         </div>
         <div id="search__box">
-            <input class="search-txt" type="text" placeholder="Введите профессию">
-            <img src="./images/header/Rectangle 10.svg" alt="search" id="search-bg">
-            <img src="./images/header/Vector.svg" alt="magnifier-1" id="magnifier-1">
-            <img src="./images/header/Vector-1.svg" alt="magnifier-2" id="magnifier-2">
+            <input id="search-txt" type="search" placeholder="Введите профессию">
+            <img src="./images/header/Rectangle 10.png" alt="search" id="search-bg">
+            <a href="#">
+                <!--при нажатии на bell или "enter" выполняется поиск-->
+                <img src="./images/header/Vector.svg" alt="magnifier-1" id="magnifier-1">
+                <img src="./images/header/Vector-1.svg" alt="magnifier-2" id="magnifier-2">
+            </a>
         </div>
         <div id="notifications">
             <div id="notifications__box">
@@ -50,7 +53,7 @@
             <h1 class="main__txt3" id="headline">Мы поможем тебя найти
                 свой dream team</h1>
             <h1 class="main__txt" id="subheadline">DP — это платформ, где российские айтишники могут найти свою работу или команду мечты, а владелицы компаний могут найти подходящего своей компании специалиста. </h1>
-            <a href="#" class="main__txt4" id="learn__more">Узнать больше</a>
+            <a href="#" id="learn__more">Узнать больше</a>
             <h1 class="main__txt" id="main__portfolio">Портфолио</h1>
             <h1 class="main__txt" id="main__exp">Опыт в сфере</h1>
             <h1 class="main__txt" id="main__teams">Команды</h1>
@@ -61,9 +64,26 @@
             <h1 class="main__txt2" id="count__specialists">4382</h1>
         </div>
         <div class="portfolio">
-            <h1 class="main__txt3" id="portfolio__container">Портфолио</h1>
+            <h1 class="main__txt3" id="portfolio__main">Портфолио</h1>
                 <!--получать портфолио с бд-->
-            <h1 class="main__txt4" id="view__all1">Посмотреть все</h1>
+        </div>
+        <div class="teams">
+            <h1 class="main__txt3" id="teams__main">Команды</h1>
+                <!--получать список команд с бд-->
+        </div>
+    </div>
+    <div class="footer">
+        <h1 class="main__txt" id="email__text">Подпишитесь на нашу рассылку, чтобы получать актуальную информацию по Вашим запросам.</h1>
+        <div id="email__container">
+            <h1 class="main__txt" id="email__headline">Эл. почта:</h1>
+            <input class="main__txt" id="email__example" type="text" placeholder="ivanov.ivan@pochta.ru">
+            <button class="main__txt" id="confirmation">OK</button>
+        </div>
+        <div id="footer__bottom">
+            <a href="index.html"><img src="./images/footer/logo.png" alt="footer_logo" id="footer__logo"></a>
+            <a href="#"><img src="./images/footer/telegram.svg" alt="telegram" id="telegram__logo"></a>
+            <a href="#"><img src="./images/footer/vk.svg" alt="vk" id="vk__logo"></a>
+            <a href="mailto:zef1rflis@yandex.ru" class="main__txt" id="footer__creator-mail">zef1rflis@yandex.ru</a>
         </div>
     </div>
 </body>
