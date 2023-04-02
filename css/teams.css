@@ -1,0 +1,82 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left__links {
+    position: absolute;
+    top: 188px;
+    left: 99px;
+    width: 297px;
+    height: 275px;
+}
+
+#main__teams {
+    position: absolute;
+    width: 196px;
+    height: 44px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #000;
+}
+.text__1 {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #A69E9E;
+
+    position: absolute;
+    white-space: nowrap;
+    height: 22px;
+    width: auto;
+}
+
+#main__website-developers {
+    top: 77px;
+}
+
+#main__designers {
+    top: 110px;
+}
+
+#main__programmers {
+    top: 143px;
+}
+
+#main__game-developers {
+    top: 176px;
+}
+
+#main__3d-graphics-specialists {
+    top: 209px;
+}
+
+#main__mobile-app-developers {
+    top: 242px;
+}
+
+#main__all {
+    position: absolute;
+    width: 36px;
+    height: 22px;
+    top: 275px;
+
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+}

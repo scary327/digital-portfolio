@@ -39,49 +39,49 @@
     position: absolute;
     width: 181px;
     height: 22px;
-    top: 78px;
+    top: 77px;
 }
 
 #main__design {
     position: absolute;
     width: 73px;
     height: 22px;
-    top: 111px;
+    top: 110px;
 }
 
 #main__programming {
     position: absolute;
     width: 195px;
     height: 22px;
-    top: 144px;
+    top: 143px;
 }
 
 #main__game-development {
     position: absolute;
     width: 150px;
     height: 22px;
-    top: 177px;
+    top: 176px;
 }
 
 #main__3d-graphics {
     position: absolute;
     width: 112px;
     height: 22px;
-    top: 210px;
+    top: 209px;
 }
 
 #main__mobile-app {
     position: absolute;
     width: 244px;
     height: 22px;
-    top: 243px;
+    top: 242px;
 }
 
 #main__all {
     position: absolute;
     width: 36px;
     height: 22px;
-    top: 276px;
+    top: 275px;
 
     text-decoration: none;
     font-family: 'Montserrat';
