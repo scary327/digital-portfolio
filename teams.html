@@ -24,7 +24,16 @@
         </div>
         <div class="header__section">
             <div class="bell"><img src="./images/header/bell.svg" alt="bell" onclick="openNotifications()"></div>
-            <div class="profile__avatar"><img src="./images/header/avatar.png" alt="profile"></div><!--аватар пользователя получать с бд-->
+            <div class="profile__avatar">
+                <!--аватар пользователя получать с бд-->
+                <img src="./images/header/avatar.png" alt="profile" onclick="openProfile()">
+            </div>
+            <div id="login__window">
+                <div class="login__window__box">
+                    <a href="#" class="profile__button login__button txt">Войти</a>
+                    <a href="#" class="profile__button register__button txt">Зарегистрироваться</a>
+                </div>
+            </div>
         </div>
         <div id="search__box">
             <input class="search-txt" type="search" placeholder="Введите профессию">
