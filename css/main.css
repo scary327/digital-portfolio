@@ -1,10 +1,10 @@
-#main__information {
+.main__information {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#main__image {
+.main__image {
     z-index: 0;
     position: absolute;
     width: 620px;
@@ -13,7 +13,9 @@
     top: 183px;
     }
 
-#headline {
+.headline {
+    margin: 0;
+    padding: 0;
     position: absolute;
     width: 472px;
     height: 88px;
@@ -21,35 +23,7 @@
     top: 198px;
 }
 
-.main__txt {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.main__txt2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 59px;
-
-    color: #000000;
-}
-
-.main__txt3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
-
-    color: #000;
-}
-
-#subheadline {
+.subheadline {
     position: absolute;
     width: 483px;
     height: 88px;
@@ -74,7 +48,7 @@
     color: #000000;
 }
 
-#main__portfolio {
+.main__portfolio {
     position: absolute;
     width: 108px;
     height: 22px;
@@ -82,7 +56,7 @@
     top: 198px;
 }
 
-#main__exp {
+.main__exp {
     position: absolute;
     width: 130px;
     height: 22px;
@@ -90,7 +64,7 @@
     top: 198px;
 }
 
-#main__teams {
+.main__teams {
     position: absolute;
     width: 87px;
     height: 22px;
@@ -98,7 +72,7 @@
     top: 339px;
 }
 
-#main__specialists {
+.main__specialists {
     position: absolute;
     width: 128px;
     height: 22px;
@@ -106,7 +80,7 @@
     top: 339px;
 }
 
-#count__portfolio {
+.count__portfolio {
     position: absolute;
     width: 92px;
     height: 59px;
@@ -114,7 +88,7 @@
     top: 229px;
 }
 
-#count__exp {
+.count__exp {
     position: absolute;
     width: 47px;
     height: 59px;
@@ -122,7 +96,7 @@
     top: 229px;
 }
 
-#count__teams {
+.count__teams {
     position: absolute;
     width: 101px;
     height: 59px;
@@ -130,7 +104,7 @@
     top: 370px;
 }
 
-#count__specialists {
+.count__specialists {
     position: absolute;
     width: 118px;
     height: 59px;
@@ -138,7 +112,7 @@
     top: 370px;
 }
 
-#portfolio__main {
+.portfolio__section {
     position: absolute;
     width: 217px;
     height: 44px;
@@ -146,7 +120,7 @@
     top: 760px;
 }
 
-#teams__main {
+.teams__section {
     position: absolute;
     width: 175px;
     height: 44px;

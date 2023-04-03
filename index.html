@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Portfolio</title>
     <link rel="icon" href="./images/footer/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,76 +16,82 @@
 <body>
     <div class="header">
         <div class="header__section">
-            <a href="index.html"><img src="./images/header/logo.png" alt="logo" id="header__logo"></a>
-            <div class="header__item" id="specialists">
-                <a href="specialists.html" class="headerButton">Специалистам</a>
-            </div>
-            <div class="header__item" id="teams">
-                <a href="teams.html" class="headerButton">Командам</a>
-            </div>
-            <div class="header__item" id="search">
-                <a href="#" class="headerButton" onclick="openSearch()">Поиск</a>
-            </div>
-            <div class="header__item" id="feedbacks">
-                <a href="#" class="headerButton">Мои отклики</a>
-            </div>
+            <a href="index.html"><img src="./images/header/logo.png" alt="logo" class="header__logo"></a>
+            <a href="specialists.html" class="header__item specialists">Специалистам</a>
+            <a href="teams.html" class="header__item teams">Командам</a>
+            <a href="#" class="header__item search" id="search__js" onclick="openSearch()">Поиск</a>
+            <a href="#" class="header__item feedbacks">Мои отклики</a>
         </div>
         <div class="header__section">
-            <img src="./images/header/bell.svg" alt="bell" id="bell" onclick="openNotifications()">
-            <a href="#"><img src="./images/header/Ellipse 1.png" alt="profile" id="profile__avatar"></a><!--аватар пользователя получать с бд-->
+            <div class="bell"><img src="./images/header/bell.svg" alt="bell" onclick="openNotifications()"></div>
+            <div class="profile__avatar">
+                <!--аватар пользователя получать с бд-->
+                <img src="./images/header/avatar.png" alt="profile" onclick="openProfile()">
+            </div>
+            <div id="login__window">
+                <div class="login__window__box">
+                    <a href="#" class="profile__button login__button txt">Войти</a>
+                    <a href="#" class="profile__button register__button txt">Зарегистрироваться</a>
+                </div>
+            </div>
         </div>
         <div id="search__box">
-            <input id="search-txt" type="search" placeholder="Введите профессию">
-            <img src="./images/header/Rectangle 10.png" alt="search" id="search-bg">
+            <input class="search-txt" type="search" placeholder="Введите профессию">
+            <div class="search-bg"><img src="./images/header/search-bg.png" alt="search"></div>
             <a href="#">
                 <!--при нажатии на bell или "enter" выполняется поиск-->
-                <img src="./images/header/Vector.svg" alt="magnifier-1" id="magnifier-1">
-                <img src="./images/header/Vector-1.svg" alt="magnifier-2" id="magnifier-2">
+                <div class="magnifier-1"><img src="./images/header/magnifier-1.svg" alt="magnifier-1"></div>
+                <div class="magnifier-2"><img src="./images/header/magnifier-2.svg" alt="magnifier-2"></div>
             </a>
         </div>
         <div id="notifications">
-            <div id="notifications__box">
+            <div class="notifications__box">
                 <!--получать уведомления с бд-->
             </div>
         </div>
     </div>
     <div class="main">
         <div class="main__information">
-            <img src="./images/main/Rectangle 1.jpg" alt="right-image" id="main__image">
-            <h1 class="main__txt3" id="headline">Мы поможем тебя найти
+            <img src="./images/main/Rectangle 1.jpg" alt="right-image" class="main__image">
+            <h1 class="txt3 headline">Мы поможем тебе найти
                 свой dream team</h1>
-            <h1 class="main__txt" id="subheadline">DP — это платформ, где российские айтишники могут найти свою работу или команду мечты, а владелицы компаний могут найти подходящего своей компании специалиста. </h1>
+            <div class="txt subheadline">DP — это платформ, где российские айтишники могут найти свою работу или команду мечты, а владелицы компаний могут найти подходящего своей компании специалиста.</div>
             <a href="#" id="learn__more">Узнать больше</a>
-            <h1 class="main__txt" id="main__portfolio">Портфолио</h1>
-            <h1 class="main__txt" id="main__exp">Опыт в сфере</h1>
-            <h1 class="main__txt" id="main__teams">Команды</h1>
-            <h1 class="main__txt" id="main__specialists">Специалисты</h1>
-            <h1 class="main__txt2" id="count__portfolio">960</h1>
-            <h1 class="main__txt2" id="count__exp">17</h1>
-            <h1 class="main__txt2" id="count__teams">1253</h1>
-            <h1 class="main__txt2" id="count__specialists">4382</h1>
+            <ul class="titles txt">
+                <li class="main__portfolio">Портфолио</li>
+                <li class="main__exp">Опыт в сфере</li>
+                <li class="main__teams">Команды</li>
+                <li class="main__specialists">Специалисты</li>
+            </ul>
+            <ul class="values txt2">
+                <li class="count__portfolio">960</li>
+                <li class="count__exp">17</li>
+                <li class="count__teams">1253</li>
+                <li class="count__specialists">4382</li>
+            </ul>
         </div>
-        <div class="portfolio">
-            <h1 class="main__txt3" id="portfolio__main">Портфолио</h1>
+        <div class="portfolio__container">
+            <div class="txt3 portfolio__section">Портфолио</div>
                 <!--получать портфолио с бд-->
         </div>
-        <div class="teams">
-            <h1 class="main__txt3" id="teams__main">Команды</h1>
+        <div class="teams__container">
+            <div class="txt3 teams__section">Команды</div>
                 <!--получать список команд с бд-->
         </div>
     </div>
     <div class="footer">
-        <h1 class="main__txt" id="email__text">Подпишитесь на нашу рассылку, чтобы получать актуальную информацию по Вашим запросам.</h1>
-        <div id="email__container">
-            <h1 class="main__txt" id="email__headline">Эл. почта:</h1>
-            <input class="main__txt" id="email__example" type="text" placeholder="ivanov.ivan@pochta.ru">
-            <button class="main__txt" id="confirmation">OK</button>
+        <div class="txt email__text">Подпишитесь на нашу рассылку, чтобы получать актуальную информацию по Вашим запросам.</div>
+        <div class="email__container">
+            <div class="txt email__headline">Эл. почта:</div>
+            <input class="txt email__example" type="text" placeholder="ivanov.ivan@pochta.ru">
+            <button class="txt" id="confirmation">OK</button>
+            <!--отправлять почту в бд-->
         </div>
-        <div id="footer__bottom">
-            <a href="index.html"><img src="./images/footer/logo.png" alt="footer_logo" id="footer__logo"></a>
-            <a href="#"><img src="./images/footer/telegram.svg" alt="telegram" id="telegram__logo"></a>
-            <a href="#"><img src="./images/footer/vk.svg" alt="vk" id="vk__logo"></a>
-            <a href="mailto:zef1rflis@yandex.ru" class="main__txt" id="footer__creator-mail">zef1rflis@yandex.ru</a>
+        <div class="footer__bottom">
+            <a href="index.html"><img src="./images/footer/logo.png" alt="footer_logo" class="footer__logo"></a>
+            <a href="#"><img src="./images/footer/telegram.svg" alt="telegram" class="telegram__logo"></a>
+            <a href="#"><img src="./images/footer/vk.svg" alt="vk" class="vk__logo"></a>
+            <a href="mailto:zef1rflis@yandex.ru" class="txt footer__creator-mail">zef1rflis@yandex.ru</a>
         </div>
     </div>
 </body>

@@ -6,74 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Portfolio</title>
     <link rel="icon" href="./images/footer/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/teams.css">
     <script src="./js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
         <div class="header__section">
-            <a href="index.html"><img src="./images/header/logo.png" alt="logo" id="header__logo"></a>
-            <div class="header__item" id="specialists">
-                <a href="specialists.html" class="headerButton">Специалистам</a>
-            </div>
-            <div class="header__item" id="teams">
-                <a href="teams.html" class="headerButton">Командам</a>
-            </div>
-            <div class="header__item" id="search">
-                <a href="#" class="headerButton" onclick="openSearch()">Поиск</a>
-            </div>
-            <div class="header__item" id="feedbacks">
-                <a href="#" class="headerButton">Мои отклики</a>
-            </div>
+            <a href="index.html"><img src="./images/header/logo.png" alt="logo" class="header__logo"></a>
+            <a href="specialists.html" class="header__item specialists">Специалистам</a>
+            <a href="teams.html" class="header__item teams">Командам</a>
+            <a href="#" class="header__item search" id="search__js" onclick="openSearch()">Поиск</a>
+            <a href="#" class="header__item feedbacks">Мои отклики</a>
         </div>
         <div class="header__section">
-            <img src="./images/header/bell.svg" alt="bell" id="bell" onclick="openNotifications()">
-            <a href="#"><img src="./images/header/Ellipse 1.png" alt="profile" id="profile__avatar"></a><!--аватар пользователя получать с бд-->
+            <div class="bell"><img src="./images/header/bell.svg" alt="bell" onclick="openNotifications()"></div>
+            <div class="profile__avatar"><img src="./images/header/avatar.png" alt="profile"></div><!--аватар пользователя получать с бд-->
         </div>
         <div id="search__box">
-            <input id="search-txt" type="search" placeholder="Введите профессию">
-            <img src="./images/header/Rectangle 10.png" alt="search" id="search-bg">
+            <input class="search-txt" type="search" placeholder="Введите профессию">
+            <div class="search-bg"><img src="./images/header/search-bg.png" alt="search"></div>
             <a href="#">
                 <!--при нажатии на bell или "enter" выполняется поиск-->
-                <img src="./images/header/Vector.svg" alt="magnifier-1" id="magnifier-1">
-                <img src="./images/header/Vector-1.svg" alt="magnifier-2" id="magnifier-2">
+                <div class="magnifier-1"><img src="./images/header/magnifier-1.svg" alt="magnifier-1"></div>
+                <div class="magnifier-2"><img src="./images/header/magnifier-2.svg" alt="magnifier-2"></div>
             </a>
         </div>
         <div id="notifications">
-            <div id="notifications__box">
+            <div class="notifications__box">
                 <!--получать уведомления с бд-->
             </div>
         </div>
     </div>
     <div class="main">
         <div class="left__links">
-            <h1 id="main__teams">Командам</h1>
-            <a href="#" class="text__1" id="main__website-developers">Разработчики сайтов</a>
-            <a href="#" class="text__1" id="main__designers">Дизайнеры</a>
-            <a href="#" class="text__1" id="main__programmers">Программисты</a>
-            <a href="#" class="text__1" id="main__game-developers">Разработчики игр</a>
-            <a href="#" class="text__1" id="main__3d-graphics-specialists">Специалисты по 3D Графике</a>
-            <a href="#" class="text__1" id="main__mobile-app-developers">Разработчики моб. приложений</a>
-            <a href="#" id="main__all">Все</a>
+            <div class="main__teams txt3">Командам</div>
+            <ul class="teams__list">
+                <li><a class="txt4" href="#">Разработчики сайтов</a></li>
+                <li><a class="txt4" href="#">Дизайнеры</a></li>
+                <li><a class="txt4" href="#">Программисты</a></li>
+                <li><a class="txt4" href="#">Разработчики игр</a></li>
+                <li><a class="txt4" href="#">Специалисты по 3D Графике</a></li>
+                <li><a class="txt4" href="#">Разработчики моб. приложений</a></li>
+                <li class="tag__all all__teams"><a class="tag__all" href="#">Все</a></li>
+            </ul>
         </div>
     </div>
     <div class="footer">
-        <h1 class="main__txt" id="email__text">Подпишитесь на нашу рассылку, чтобы получать актуальную информацию по Вашим запросам.</h1>
-        <div id="email__container">
-            <h1 class="main__txt" id="email__headline">Эл. почта:</h1>
-            <input class="main__txt" id="email__example" type="text" placeholder="ivanov.ivan@pochta.ru">
-            <button class="main__txt" id="confirmation">OK</button>
+        <div class="txt email__text">Подпишитесь на нашу рассылку, чтобы получать актуальную информацию по Вашим запросам.</div>
+        <div class="email__container">
+            <div class="txt email__headline">Эл. почта:</div>
+            <input class="txt email__example" type="text" placeholder="ivanov.ivan@pochta.ru">
+            <button class="txt" id="confirmation">OK</button>
+            <!--отправлять почту в бд-->
         </div>
-        <div id="footer__bottom">
-            <a href="index.html"><img src="./images/footer/logo.png" alt="footer_logo" id="footer__logo"></a>
-            <a href="#"><img src="./images/footer/telegram.svg" alt="telegram" id="telegram__logo"></a>
-            <a href="#"><img src="./images/footer/vk.svg" alt="vk" id="vk__logo"></a>
-            <a href="mailto:zef1rflis@yandex.ru" class="main__txt" id="footer__creator-mail">zef1rflis@yandex.ru</a>
+        <div class="footer__bottom">
+            <a href="index.html"><img src="./images/footer/logo.png" alt="footer_logo" class="footer__logo"></a>
+            <a href="#"><img src="./images/footer/telegram.svg" alt="telegram" class="telegram__logo"></a>
+            <a href="#"><img src="./images/footer/vk.svg" alt="vk" class="vk__logo"></a>
+            <a href="mailto:zef1rflis@yandex.ru" class="txt footer__creator-mail">zef1rflis@yandex.ru</a>
         </div>
     </div>
 </body>

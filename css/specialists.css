@@ -1,94 +1,28 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .left__links {
     position: absolute;
-    width: 280px;
-    height: 298px;
-    top: 198px;
-    left: 99px; 
+    top: 188px;
+    left: 99px;
+    width: 297px;
+    height: 275px;
 }
 
-.text__1 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
+.main__specialists {
+    position: absolute; 
+    width: 196px;
+    height: 44px;
 }
 
-.text__2 {
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-
-    color: #A69E9E;
-}
-
-#main__specialists {
-    position: absolute;
-}
-
-#main__website-development {
-    position: absolute;
-    width: 181px;
+.specialists__list a {
+    position: relative;
+    white-space: nowrap;
     height: 22px;
-    top: 77px;
+    width: auto;
+    top: 55px;
+    padding-top: 11px;
 }
 
-#main__design {
-    position: absolute;
-    width: 73px;
-    height: 22px;
-    top: 110px;
-}
-
-#main__programming {
-    position: absolute;
-    width: 195px;
-    height: 22px;
-    top: 143px;
-}
-
-#main__game-development {
-    position: absolute;
-    width: 150px;
-    height: 22px;
-    top: 176px;
-}
-
-#main__3d-graphics {
-    position: absolute;
-    width: 112px;
-    height: 22px;
-    top: 209px;
-}
-
-#main__mobile-app {
-    position: absolute;
-    width: 244px;
-    height: 22px;
-    top: 242px;
-}
-
-#main__all {
+.all__specialists {
     position: absolute;
     width: 36px;
     height: 22px;
-    top: 275px;
-
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-
-    color: #000000;
 }

@@ -8,7 +8,7 @@
     white-space: nowrap !important;
 }
 
-#header__logo {
+.header__logo {
     position: absolute;
     width: 59px;
     height: 59px;
@@ -16,11 +16,6 @@
     top: 83px;
 
     cursor: pointer;
-}
-
-.header__section {
-    display: flex;
-    align-items: center;
 }
 
 .header__item {
@@ -32,38 +27,27 @@
     line-height: 22px;
 
     cursor: pointer;
-}
-
-.headerButton {
-    cursor: pointer;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
     color: #fff;
-    
-    padding: 4px 8px;
+    padding: 2px 8px;
     background-color: #000;
     border-radius: 50px;
 }
 
-.headerButton:hover {
+.header__item:hover {
     color: #000;
     background-color: #fff;
     text-decoration-line: underline;
 }
 
-#specialists {
+.specialists {
     position: absolute;
     width: 142px;
-    height: 26.4px;
+    height: 22px;
     left: 1037px;
     top: 83.4px;
 }
 
-#teams {
+.teams {
     position: absolute;
     width: 100px;
     height: 22px;
@@ -71,7 +55,7 @@
     top: 83px;
 }
 
-#search {
+.search {
     position: absolute;
     width: 61px;
     height: 22px;
@@ -79,7 +63,7 @@
     top: 83px;
 }
 
-#feedbacks {
+.feedbacks {
     position: absolute;
     /*width: 131px;*/
     height: 22px;
@@ -87,7 +71,7 @@
     top: 83px;
 }
 
-#bell {
+.bell {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -95,7 +79,7 @@
     top: 83px;
 }
 
-#profile__avatar {
+.profile__avatar {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -103,19 +87,75 @@
     top: 75px;
 }
 
+#login__window {
+    display: none;
+    z-index: 3;
+}
+
+.login__window__box {
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+
+    position: absolute;
+    width: 218px;
+    height: 72px;
+    left: 1603px;
+    top: 117px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(72, 72, 72, 0.25);
+    border-radius: 4px;
+}
+
+.profile__button {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 212px;
+    height: 30px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(72, 72, 72, 0.25);
+    border-radius: 4px;
+    color: #000000;
+}
+
+.login__button {
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    height: 22px;
+}
+
+.register__button {
+    position: absolute;
+    left: 3px;
+    top: 46px;
+    height: 22px;
+}
+
 #search__box {
     display: none;
     z-index: 1;
 }
 
-#search-txt {
+.search-txt {
     z-index: 2;
     border: none;
     position: absolute;
-    width: 152px;
+    width: 170px;
     height: 17px;
     left: 1300px;
-    top: 130.5px;
+    top: 133px;
     outline: none;
 
     font-family: 'Montserrat';
@@ -127,30 +167,29 @@
     background: #F0F0F0;
 }
 
-#search-bg {
+.search-bg {
     position: absolute;
     width: 228px;
-    /*height: 51.5px;*/
     left: 1260px;
     top: 106px;
 }
 
-#magnifier-1 {
+.magnifier-1 {
     position: absolute;
     height: 16px;
-    width: 21.33333396911621px;
+    width: 21.3px;
     left: 1271px;
-    top: 132.60498046875px;
+    top: 132.6px;
 
     border-radius: 0px;
 }
 
-#magnifier-2 {
+.magnifier-2 {
     position: absolute;
-    height: 4.350000381469727px;
-    width: 5.8000006675720215px;
-    left: 1286px;
-    top: 145px;
+    height: 4.4px;
+    width: 5.8px;
+    left: 1285px;
+    top: 138px;
 
     border-radius: 0px;
 }
@@ -160,7 +199,7 @@
     display: none;
 }
 
-#notifications__box {
+.notifications__box {
     display: flex;
     flex-direction: column;
     justify-content: center;
