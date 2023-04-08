@@ -1,10 +1,16 @@
+.footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 2210px;
+}
+
 .email__text {
     position: absolute;
     width: 483px;
     height: 44px;
     left: 719px;
-    top: 2210px;
-
     text-align: center;
 }
 
@@ -15,7 +21,7 @@
     width: 332px;
     height: 142px;
     left: 795px;
-    top: 2307px;
+    top: 97px;
 
     border: 1px solid #000000;
     border-radius: 40px;
@@ -35,6 +41,7 @@
     height: 22px;
     left: 27px;
     top: 54px;
+    padding-left: 10px;
 
     color: #A69E9E;
 
@@ -64,7 +71,7 @@
     width: 100%;
     left: 0px;
     height: 80px;
-    top: 2532px;
+    top: 322px;
 
     background: #000000;
 }
