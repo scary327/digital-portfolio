@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/login.css">
     <script src="./js/script.js"></script>
     <script src="./js/registration.js"></script>
+    <script src="./js/login-acc.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
             <a href="#" class="header__item feedbacks">Мои отклики</a>
         </div>
         <div class="header__section">
-            <div class="bell"><img src="./images/header/bell.svg" alt="bell" onclick="openNotifications()"></div>
+            <div class="bell"><a href="profile.html"><img src="./images/header/bell.svg" alt="bell"></a></div>
             <div class="profile__avatar">
                 <!--аватар пользователя получать с бд-->
                 <img src="./images/header/none_avatar.svg" alt="profile" onclick="openProfile()">
@@ -68,11 +69,11 @@
             <div id="specialists__window">
                 <h1 class="headline txt5">Добро пожаловать!</h1>
                 <p class="subtitle txt6">Добро пожаловать! Введите эл. почту и пароль.</p>
-                <form action="#">
+                <form action="#" id="login__specialist">
                     <label for="email" class="txt6 label__email">Email</label>
-                    <input type="text" name="email" placeholder="ivanov.ivan@pochta.ru" class="txt input input__email" required>
+                    <input type="text" name="email__specialist" placeholder="ivanov.ivan@pochta.ru" class="txt input input__email" required>
                     <label for="psw" class="txt6 label__psw">Пароль</label>
-                    <input type="text" name="psw" placeholder="Введите пароль..." class="txt input input__psw" required>
+                    <input type="text" name="psw__specialist" placeholder="Введите пароль..." class="txt input input__psw"required>
 
                     <button class="txt4 bottom__button__login">Войти</button> 
                     <button class="bottom__button__google txt4">
@@ -80,7 +81,11 @@
                         Войти с Google
                     </button>
                     <!--сделать вывод при неправильно введённых данных-->
-                    <p class="txt6 remember__me"><input type="checkbox" checked name="remember" class="checkbox__login">Запомнить меня</p>
+                    <label class="checkbox__label">
+                        <input type="checkbox" checked name="remember" class="checkbox">
+                        <span class="checkbox__marker"></span>
+                        <span class="txt6 remember__me">Запомнить меня</span>
+                    </label>
                     <a href="#" class="txt6 forget__psw">Забыли пароль?</a>
                     <!--сделать ссылку на забыли пароль-->
                 </form>
@@ -106,7 +111,11 @@
                         Войти с Google
                     </button>
                     <!--сделать вывод при неправильно введённых данных-->
-                    <p class="txt6 remember__me"><input type="checkbox" checked name="remember" class="checkbox__login">Запомнить меня</p>
+                    <label class="checkbox__label">
+                        <input type="checkbox" checked name="remember" class="checkbox">
+                        <span class="checkbox__marker"></span>
+                        <span class="txt6 remember__me">Запомнить меня</span>
+                    </label>
                     <a href="#" class="txt6 forget__psw">Забыли пароль?</a>
                     <!--сделать ссылку на забыли пароль-->
                 </form>

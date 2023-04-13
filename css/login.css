@@ -128,21 +128,6 @@
     color: #A69E9E;
 }
 
-.checkbox__login {
-    position: absolute;
-    left: -25px;
-}
-
-.remember__me {
-    position: absolute;
-    left: 79px;
-    top: 326px;
-    height: 17px;
-    width: auto;
-    white-space: nowrap;
-    color: #000;
-}
-
 .input {
     margin: 0;
     padding: 0;
@@ -206,7 +191,7 @@
 .forget__psw {
     position: absolute;
     left: 421px;
-    top: 340px;
+    top: 328px;
 
     color: #000000;
 }
@@ -268,3 +253,40 @@
     white-space: nowrap;
 }
 
+.checkbox__label {
+    position: absolute;
+    left: 54px;
+    top: 326px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox__marker {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.fake::before {
+    content: "";
+    display: inline-block;
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .checkbox__marker::before {
+    content: url(../images/main/checkbox-marker.svg);
+    opacity: 1;
+}
+
+.remember__me {
+    position: absolute;
+    white-space: nowrap;
+    left: 25px;
+    width: auto;
+}

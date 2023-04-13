@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Командам</title>
+    <title>Digital Portfolio</title>
     <link rel="icon" href="./images/footer/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/teams.css">
+    <link rel="stylesheet" href="./css/profile.css">
     <script src="./js/script.js"></script>
+    <script src="./js/profile.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -52,19 +53,26 @@
     </div>
     <div class="main">
         <div class="left__links">
-            <div class="main__teams txt3">Командам</div>
-            <ul class="teams__list">
-                <li><a class="txt4" href="#">Разработчики сайтов</a></li>
-                <li><a class="txt4" href="#">Дизайнеры</a></li>
-                <li><a class="txt4" href="#">Программисты</a></li>
-                <li><a class="txt4" href="#">Разработчики игр</a></li>
-                <li><a class="txt4" href="#">Специалисты по 3D Графике</a></li>
-                <li><a class="txt4" href="#">Разработчики моб. приложений</a></li>
-                <li class="tag__all all__teams"><a class="tag__all" href="#">Все</a></li>
+            <img src="./images/main/test__img.jpg" alt="avatar" class="profile__avatar__main"> <!--Аватар пользователя-->
+            <h1 class="user__name txt5">Имя пользователя</h1>
+            <ul class="profile__links txt">
+                <li id="profile__text"><button class="profile__buttons txt" onclick="openProfileUser()">Профиль</button></li>
+                <li id="notifications__text"><button class="profile__buttons txt" onclick="openNotificationsUser()">Уведомления</button></li>
+                <li id="settings__text"><button class="profile__buttons txt" onclick="openSettings()">Настройки</button></li>
+                <li><button class="profile__buttons txt" onclick="SignOut()">Выйти</button></li>
             </ul>
         </div>
+        <div id="profile">
+            
+        </div>
+        <div id="notifications__main">
+            
+        </div>
+        <div id="settings">
+            
+        </div>
     </div>
-    <div class="footer">
+    <div class="footer" style="top: 1057px;">
         <div class="txt email__text">Подпишитесь на нашу рассылку, чтобы получать актуальную информацию по Вашим запросам.</div>
         <div class="email__container">
             <div class="txt email__headline">Эл. почта:</div>
@@ -80,4 +88,3 @@
         </div>
     </div>
 </body>
-</html>

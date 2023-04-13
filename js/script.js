@@ -16,17 +16,6 @@ function openSearch() {
     }
 }
 
-function openNotifications() {
-    var x = document.getElementById('notifications');
-
-    if (x.style.display == 'none'){
-        x.style.display = 'flex';
-    }
-    else{
-        x.style.display = 'none';
-    }
-}
-
 function openProfile() {
     var x = document.getElementById('login__window');
 

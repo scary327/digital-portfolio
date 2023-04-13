@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/registration.css">
     <script src="./js/script.js"></script>
     <script src="./js/registration.js"></script>
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/new-acc.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -24,7 +26,7 @@
             <a href="#" class="header__item feedbacks">Мои отклики</a>
         </div>
         <div class="header__section">
-            <div class="bell"><img src="./images/header/bell.svg" alt="bell" onclick="openNotifications()"></div>
+            <div class="bell"><a href="profile.html"><img src="./images/header/bell.svg" alt="bell"></a></div>
             <div class="profile__avatar">
                 <!--аватар пользователя получать с бд-->
                 <img src="./images/header/none_avatar.svg" alt="profile" onclick="openProfile()">
@@ -68,11 +70,11 @@
             <div id="specialists__window">
                 <h1 class="headline txt5">Добро пожаловать!</h1>
                 <p class="subtitle txt6">Добро пожаловать! Зарегистрируйтесь!</p>
-                <form action="#">
+                <form action="#" id="registration__specialist">
                     <label for="email" class="txt6 label__email">Email</label>
-                    <input type="text" name="email" placeholder="ivanov.ivan@pochta.ru" class="txt input input__email" required>
+                    <input type="text" name="email__specialist" placeholder="ivanov.ivan@pochta.ru" class="txt input input__email" required>
                     <label for="psw" class="txt6 label__psw">Пароль</label>
-                    <input type="text" name="psw" placeholder="Введите пароль..." class="txt input input__psw" required>
+                    <input type="text" name="psw__specialist" placeholder="Введите пароль..." class="txt input input__psw" required>
                     
                     <label for="profession" class="txt6 label__profession">Профессия</label>
                     <select size="1" name="profession" class="txt specialists__select" required>
@@ -101,11 +103,11 @@
             <div id="teams__window">
                 <h1 class="headline txt5">Добро пожаловать!</h1>
                 <p class="subtitle txt6">Добро пожаловать! Зарегистрируйтесь!</p>
-                <form action="#">
+                <form action="#" id="registration__team">
                     <label for="email" class="txt6 label__email">Email</label>
-                    <input type="text" name="email" placeholder="ivanov.ivan@pochta.ru" class="txt input input__email" required>
+                    <input type="text" name="email__team" placeholder="ivanov.ivan@pochta.ru" class="txt input input__email" required>
                     <label for="psw" class="txt6 label__psw">Пароль</label>
-                    <input type="text" name="psw" placeholder="Введите пароль..." class="txt input input__psw" required>
+                    <input type="text" name="psw__team" placeholder="Введите пароль..." class="txt input input__psw" required>
                     <label for="team__name" class="txt6 label__team-name">Название команды</label>
                     <input type="text" name="team__name" placeholder="Введите название команды..." class="txt input input__team-name" required>
 

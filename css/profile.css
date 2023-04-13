@@ -1,0 +1,44 @@
+.left__links {
+    position: absolute;
+    left: 100px;
+    top: 202px;
+}
+
+.profile__avatar__main {
+    position: absolute;
+    left: 33px;
+    height: 171px;
+    width: 171px;
+    border-radius: 50%;
+}
+
+.user__name {
+    position: absolute;
+    top: 192px;
+    width: auto;
+    white-space: nowrap;
+}
+
+.profile__links {
+    margin-top: 25px;
+    position: absolute;
+    top: 255px;
+}
+
+.profile__buttons {
+    border: none;
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+
+#profile {
+    display: none;
+}
+
+#notifications__main {
+    display: none;
+}
+
+#settings {
+    display: none;
+}
