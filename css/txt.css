@@ -76,3 +76,19 @@
     font-size: 48px;
     line-height: 59px;
 }
+
+.txt8 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.txt9 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}

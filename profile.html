@@ -53,17 +53,71 @@
     </div>
     <div class="main">
         <div class="left__links">
-            <img src="./images/main/test__img.jpg" alt="avatar" class="profile__avatar__main"> <!--Аватар пользователя-->
+            <img src="./images/main/test__img.jpg" alt="avatar" class="profile__avatar__main"><!--Аватар пользователя-->
+            <img src="./images/main/edit.svg" alt="edit" class="edit__avatar">
+            <span class="text__edit txt">Изменить аватарку</span>
             <h1 class="user__name txt5">Имя пользователя</h1>
             <ul class="profile__links txt">
-                <li id="profile__text"><button class="profile__buttons txt" onclick="openProfileUser()">Профиль</button></li>
-                <li id="notifications__text"><button class="profile__buttons txt" onclick="openNotificationsUser()">Уведомления</button></li>
-                <li id="settings__text"><button class="profile__buttons txt" onclick="openSettings()">Настройки</button></li>
+                <li><button class="profile__buttons txt" onclick="openProfileUser()">Профиль</button></li>
+                <li><button class="profile__buttons txt" onclick="openNotificationsUser()">Уведомления</button></li>
+                <li><button class="profile__buttons txt" onclick="openSettings()">Настройки</button></li>
                 <li><button class="profile__buttons txt" onclick="SignOut()">Выйти</button></li>
             </ul>
         </div>
         <div id="profile">
-            
+            <h1 class="txt8 personal__data">Личные данные</h1>
+            <form action="personal__data">
+                <span class="fio txt">ФИО</span>
+                <input type="text" placeholder="Введите фио" class="fio__input txt">
+                <span class="psw txt">Пароль</span>
+                <input type="password" name="password" id="password__input" placeholder="Введите пароль" name="password" class="txt">
+                <a href="#" class="password__control txt" onclick="return show_hide_password(this);">Показать пароль</a>
+                <span class="email txt">E-mail</span>
+                <input type="text" placeholder="Введите почту" class="email__input txt">
+            </form>
+            <div class="questionnaire">
+                <span class="txt8">Анкета</span>
+                <form action="questionnaire">
+                    <span class="txt field__know">Область знаний</span>
+                    <select name="field__knowledge" class="txt field__knowledge">
+                        <option value="0" disabled selected hidden>Укажите область знаний...</option>
+                    </select>
+                    <span class="txt projects">Каковы некоторые из самых сложных проектов, над которыми вы работали?</span>
+                    <input type="text" class="txt projects_input" placeholder="Расскажите самые сложные проекты...">
+                    <span class="txt distant__work">Работали ли вы когда-нибудь удаленно? Возникали и у вас трудности при работе таким путем?</span>
+                    <input type="text" class="txt distant__input" placeholder="Укажите опыт удаленной работы...">
+                    <span class="txt goals">Каковы ваши долгосрочные карьерные цели?</span>
+                    <input type="text" class="txt goals__input" placeholder="Введите ответ...">
+                    <span class="txt years">Сколько лет опыта у вас есть в вашей области?</span>
+                    <input type="text" class="txt years__input" placeholder="Укажите опыт...">
+                    <span class="txt weaknesses">По вашему мнению, каковы ваши сильные и слабые стороны в вашей профессии?</span>
+                    <input type="text" class="txt weaknesses_input" placeholder="Введите ответ...">
+                    <span class="txt latest_tech">Как вы остаетесь в курсе последних тенденций и технологий в своей области?</span>
+                    <input type="text" class="txt tech_input" placeholder="Введите ответ...">
+                    <span class="txt additionally">Дополнительно:</span>
+                    <input type="text" class="txt additionally_input" placeholder="Введите ответ...">
+                </form>
+            </div>
+            <div class="portfolio__quest">
+                <span class="txt8">Портфолио</span>
+                <form action="portfolio">
+                    <span class="txt portfolio__name">Название портфолио</span>
+                    <input type="text" class="txt portfolio__input__name" placeholder="Мое портфолио">
+                    <span class="txt file">Прикрепите файл:</span>
+                    <input type="file" class="file__input" id="file__input_id">
+                    <label for="file__input_id" id="file__label">
+                        <span class="txt9 label__txt">Добавьте сюда портфолио</span>
+                        <img src="./images/main/file__input.svg" alt="file__input" class="img__file__input">
+                    </label>
+                    <span class="txt portfolio__link">Укажите ссылку на ваше портфолио:</span>
+                    <input type="text" class="txt portfolio__input__link" placeholder="Введите URL-адрес...">
+                    <img src="./images/main/portfolio__logo.png" alt="portfolio logo" class="portfolio__logo">
+                    <img src="./images/main/edit.svg" alt="edit" class="edit__portfolio__logo">
+                    <span class="text__edit__logo txt">Изменить обложку</span>
+                </form>
+                <button class="but__cancel txt">Отмена</button>
+                <button class="but__OK txt">ОК</button>
+            </div>
         </div>
         <div id="notifications__main">
             
@@ -72,7 +126,7 @@
             
         </div>
     </div>
-    <div class="footer" style="top: 1057px;">
+    <div class="footer" style="top: 2113px;">
         <div class="txt email__text">Подпишитесь на нашу рассылку, чтобы получать актуальную информацию по Вашим запросам.</div>
         <div class="email__container">
             <div class="txt email__headline">Эл. почта:</div>
