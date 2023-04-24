@@ -1,5 +1,6 @@
 .left__links {
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     left: 100px;
     top: 202px;
 }
