@@ -18,8 +18,8 @@
     <div class="header">
         <div class="header__section">
             <a href="index.html"><img src="./images/header/logo.png" alt="logo" class="header__logo"></a>
-            <a href="specialists.html" class="header__item specialists">Специалистам</a>
-            <a href="teams.html" class="header__item teams">Командам</a>
+            <a href="teams.html" class="header__item specialists">Специалистам</a>
+            <a href="specialists.html" class="header__item teams">Командам</a>
             <a href="#" class="header__item search" id="search__js" onclick="openSearch()">Поиск</a>
             <a href="#" class="header__item feedbacks">Мои отклики</a>
         </div>
@@ -102,21 +102,21 @@
                 <span class="txt8">Портфолио</span>
                 <form action="portfolio">
                     <span class="txt portfolio__name">Название портфолио</span>
-                    <input type="text" class="txt portfolio__input__name" placeholder="Мое портфолио">
+                    <input type="text" class="txt" id="portfolio__input__name" placeholder="Мое портфолио">
                     <span class="txt file">Прикрепите файл:</span>
                     <input type="file" class="file__input" id="file__input_id">
                     <label for="file__input_id" id="file__label">
                         <span class="txt9 label__txt">Добавьте сюда портфолио</span>
                         <img src="./images/main/file__input.svg" alt="file__input" class="img__file__input">
                     </label>
-                    <span class="txt portfolio__link">Укажите ссылку на ваше портфолио:</span>
+                    <span class="txt" id="portfolio__link">Укажите ссылку на ваше портфолио:</span>
                     <input type="text" class="txt portfolio__input__link" placeholder="Введите URL-адрес...">
-                    <img src="./images/main/portfolio__logo.png" alt="portfolio logo" class="portfolio__logo">
+                    <img src="./images/main/portfolio__logo.png" alt="portfolio logo" id="portfolio__logo">
                     <img src="./images/main/edit.svg" alt="edit" class="edit__portfolio__logo">
                     <span class="text__edit__logo txt">Изменить обложку</span>
                 </form>
                 <button class="but__cancel txt">Отмена</button>
-                <button class="but__OK txt">ОК</button>
+                <button class="but__OK txt" onclick="sendProjectData()">ОК</button>
             </div>
         </div>
         <div id="notifications__main">

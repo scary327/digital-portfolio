@@ -23,3 +23,28 @@ function show_hide_password(target){
 	}
 	return false;
 }
+
+function sendProjectData(){
+    const projectData = {
+        name: document.getElementById('portfolio__input__name'),
+        file: document.getElementById('document.getElementById'),
+        description: document.getElementById('portfolio__link'),
+        avatar: document.getElementById('portfolio__logo')
+    }
+
+    const jsonData = JSON.stringify(projectData);
+
+    $.ajax({
+        url: "", //сюда вписать путь, куда эти данные отправить
+        type: "POST",
+        data: jsonData,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function(response) {
+            console.log("отправлено на бэк");
+        },
+        error: function(error) {
+            console.error("ошибка при отправке на бэк", error);
+        }
+    });
+}
