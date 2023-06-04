@@ -112,12 +112,70 @@
     top: 370px;
 }
 
+.portfolio__container{
+    position: absolute;
+    left: 50px;
+    top: 760px;
+}
+
 .portfolio__section {
     position: absolute;
     width: 217px;
     height: 44px;
-    left: 99px;
-    top: 760px;
+}
+
+.portfolio-one {
+    position: absolute;
+    top: 91px;
+    left: 0px;
+}
+
+.portfolio-two {
+    position: absolute;
+    top: 91px;
+    left: 630px;
+}
+
+.full__name {
+    position: absolute;
+    top: 435px;
+    left: 0px;
+}
+
+.portfolio__name {
+    position: absolute;
+    top: 435px;
+    right: 0px;
+}
+
+.see__all {
+    position: absolute;
+    left: 1260px;
+    top: 91px;
+}
+
+.a__see-all {
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.bg-circle {
+    position: absolute;
+    top: 50px;
+    left: 78px;
+}
+
+.bg-arrow {
+    position: absolute;
+    top: 61px;
+    left: 85px;
 }
 
 .teams__section {
