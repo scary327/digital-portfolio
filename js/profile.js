@@ -1,4 +1,4 @@
-function show_hide_password(target){
+function show_hide_password(){
 	var input = document.getElementById('password__input');
 	if (input.getAttribute('type') == 'password') {
 		input.setAttribute('type', 'text');
