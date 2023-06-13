@@ -8,6 +8,7 @@
     width: 600px;
     box-shadow: 0 0 10px #000;
     background-color: #fff;
+    border-radius: 20px;
 }
 
 
@@ -21,6 +22,7 @@
     width: 600px;
     box-shadow: 0 0 10px #000;
     background-color: #fff;
+    border-radius: 20px;
 }
 
 #file__label1 {
